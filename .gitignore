@@ -31,7 +31,8 @@ venv.bak/
 
 # PyTorch Lightning
 lightning_logs/
-logs/
+logs/*
+!logs/.gitkeep
 *.ckpt
 checkpoints/
 
@@ -40,7 +41,8 @@ checkpoints/
 */.ipynb_checkpoints/*
 
 # Data files - COCO Dataset
-data/
+data/*
+!data/.gitkeep
 datasets/
 *.jpg
 *.jpeg
@@ -53,11 +55,13 @@ datasets/
 # Model weights and checkpoints
 *.pth
 *.pt
-weights/
+weights/*
+!weights/.gitkeep
 models/
 
 # Results and outputs
-results/
+results/*
+!results/.gitkeep
 outputs/
 tmp/
 *.png
@@ -82,7 +86,7 @@ ehthumbs.db
 Thumbs.db
 
 # uv
-uv.lock
+# uv.lock  # Keep this file for reproducible installs
 
 # Temporary files
 *.tmp
